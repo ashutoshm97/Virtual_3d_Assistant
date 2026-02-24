@@ -1,0 +1,41 @@
+{
+  "paths": {
+    "root": ".",
+    "backend": "./Backend",
+    "frontend": "./Frontend",
+    "audioFiles": "./Backend/audios",
+    "binaries": "./Backend/bin",
+    "ffmpeg": "./Backend/bin/ffmpeg",
+    "rhubarb": "./Backend/bin/rhubarb"
+  },
+  "server": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "api": {
+    "openai": {
+      "model": "gpt-3.5-turbo-1106",
+      "maxTokens": 1000,
+      "temperature": 0.6
+    },
+    "elevenLabs": {
+      "voiceID": "cgSgspJ2msm6clMCkdW9"
+    },
+    "deepgram": {
+      "apiUrl": "https://api.deepgram.com/v1/listen"
+    }
+  },
+  "assistant": {
+    "name": "Virtual Assistant",
+    "context": "You are a personal assistant for Purdue Fort Wayne University students.",
+    "facialExpressions": ["smile", "sad", "angry", "surprised", "funnyFace", "default"],
+    "animations": ["Talking_0", "Talking_1", "Talking_2", "Crying", "Laughing", "Rumba", "Idle", "Terrified", "Angry"]
+  },
+  "fileFormats": {
+    "audio": {
+      "input": "mp3",
+      "output": "wav",
+      "lipSync": "json"
+    }
+  }
+}
